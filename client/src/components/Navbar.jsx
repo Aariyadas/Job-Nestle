@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const user = {};
+  const [isOpen, setIsOpen] = useState(false);
+  const handleCloseNav = () => {
+    setIsOpen((prev) => !prev);
+  };
   return (
-    <div>Navbar</div>
-  )
-}
+    <>
+      <div className="relative bg-[#f7fdfd] z-50">
+        <div className="container mx-auto flex items-center justify-between p-5">
 
-export default Navbar
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;

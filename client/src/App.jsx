@@ -5,7 +5,7 @@ import { About, AuthenticationPage, Companies, CompanyProfile, FindJob, JobDetai
 
 
 function Layout  () {
-  const user =false;
+  const user =true;
   const location =useLocation()
   return user? (
     <Outlet/>) : (
