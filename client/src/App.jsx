@@ -1,11 +1,11 @@
 import { Outlet, Navigate, Route, Routes, useLocation, useLoaderData } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import { About, AuthenticationPage, Companies, CompanyProfile, FindJob, JobDetail, UploadJob } from "./pages";
+import { About, AuthenticationPage, Companies, CompanyProfile, FindJob, JobDetail, UploadJob, UserProfile } from "./pages";
 
 
 function Layout  () {
-  const user =true;
+  const user =false;
   const location =useLocation()
   return user? (
     <Outlet/>) : (
@@ -15,6 +15,7 @@ function Layout  () {
 }
 
 export default function App() {
+  const user={};
   return (
     <main>
       <Navbar />
