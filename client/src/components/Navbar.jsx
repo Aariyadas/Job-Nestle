@@ -128,7 +128,7 @@ const Navbar = () => {
               <Link to="/" onClick={handleCloseNav}>About Us</Link>
             </li>
           </ul>
-          <div className=" lg:block">
+          <div className="hidden lg:block">
             {!user?.token ? (
               <Link to="/user-auth">
                 <CustomButton
